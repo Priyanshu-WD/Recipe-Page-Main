@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --nutmeg--: #4d8fa3;
+  --dark-respberry--: #287b54;
+  --white--: #ffffff;
+  --rose-white--: #f5fffa;
+  --egg-shell--: #d8e6f3;
+  --light-grey--: #d8dee4;
+  --wenge-brown--: #4e575f;
+  --dark-charcoal--: #2c2e30;
+  --purple--: #7b284f;
+  --brown--: #854632;
+}
+
+body {
+  background-color: var(--dark-respberry--);
+  padding: 100px;
+}
+
+
+main {
+  min-height: 100vh;
+}
+
+#sec1 {
+  background-color: var(--rose-white--);
+  width: 45rem;
+  margin: auto;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.img {
+  width: 41.8rem;
+  border-radius: 12px;
+}
+
+.content,
+.ingredients,
+.instructions,
+.nutrition {
+  padding: 0rem;
+  margin-top: 1rem;
+}
+
+.hero-text {
+  font-size: 3rem;
+  width: 45rem;
+  color: var(--dark-charcoal--);
+  font-family: "Young Serif";
+  font-weight: 200;
+}
+
+.hero-para {
+  color: var(--dark-charcoal--);
+  font-family: "Outfit";
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 1.625rem;
+}
+.preparation {
+  padding: 2rem;
+  height: 14rem;
+}
+
+.hero-text1 {
+  color: var(--purple--);
+  font-family: "Outfit";
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.prep-list {
+  padding: 1rem;
+  line-height: 2.5rem;
+}
+
+.list {
+  color: var(--wenge-brown--);
+  font-size: 1.2rem;
+  font-family: "Outfit";
+}
+
+.prep-list1 {
+  padding: 0.8rem;
+  line-height: 1.8rem;
+  margin-left: 0.6rem;
+}
+
+.hero-text2 {
+  font-size: 3rem;
+  font-family: "Young Serif";
+  font-weight: 400;
+  color: var(--brown--);
+}
+
+.list1 {
+  color: var(--wenge-brown--);
+  font-size: 1.2rem;
+  font-family: "Outfit";
+  padding: 0.4rem;
+}
+
+.prep-list2 {
+  padding: 0.8rem;
+  margin-left: 0.6rem;
+  line-height: 1.825rem;
+}
+.list2 {
+  color: var(--wenge-brown--);
+  font-size: 1.2rem;
+  font-family: "Outfit";
+  margin: 0.6rem;
+  list-style: decimal;
+}
+
+.list2::marker {
+  color: var(--brown--);
+  font-weight: 600;
+}
+
+.nutrition-description {
+  color: var(--wenge-brown--);
+  font-family: "Outfit";
+  font-size: 1.1rem;
+}
+.nutrition-table {
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: var(--wenge-brown--);
+  border-bottom: 1px soild var(--light-grey--);
+  border-collapse: collapse;
+}
+
+.nutrition-table tr:not(:last-child) {
+  border-bottom: 1px solid var(--light-grey--);
+}
+
+.nutrition-name {
+  font-family: "Outfit";
+  padding-left: 2rem;
+}
+
+.nutrition-weight {
+  color: var(--brown--);
+  font-family: "Outfit";
+  font-weight: 600;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+  body{
+    padding: 0px;
+  }
+  #sec1 {
+    padding: 0rem;
+    margin-top: 0rem;
+    width: 100%;
+    background-color: var(--rose-white--);
+    border-radius: 0px;
+  }
+  .img {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .content,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 3rem;
+    width: 25rem;
+    color: var(--dark-charcoal--);
+  }
+
+  .hero-para {
+    font-size: 1.2rem;
+    margin-top: 1.25rem;
+    line-height: 1.8rem;
+  }
+
+  .preparation {
+    padding: 2rem;
+    height: 17.5rem;
+  }
+
+  .hero-text1 {
+    color: var(--dark-respberry--);
+    font-weight: 400;
+  }
+
+  .prep-list {
+    padding: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .list {
+    font-size: 1.5rem;
+    padding: 0rem;
+  }
+
+  .list::marker {
+    color: var(--dark-respberry--);
+  }
+
+  .prep-list1 {
+    line-height: 2.8rem;
+  }
+
+  .hero-text2 {
+    color: var(--nutmeg--);
+  }
+
+  .list1 {
+    font-size: 1.5rem;
+  }
+
+  .list1::marker {
+    color: var(--nutmeg--);
+  }
+
+  .hr {
+    border: 1px solid var(--light-grey--);
+  }
+
+  .prep-list2 {
+    line-height: 2.125rem;
+  }
+  .list2 {
+    font-size: 1.5rem;
+  }
+  .list2::marker {
+    color: var(--nutmeg--);
+    font-weight: 800;
+  }
+
+  .nutrition-description {
+    font-size: 1.3rem;
+  }
+
+  .nutrition-weight {
+    color: var(--nutmeg--);
+  }
+}
